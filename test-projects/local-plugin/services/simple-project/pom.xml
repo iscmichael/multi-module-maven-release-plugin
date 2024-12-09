@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>services</artifactId>
-        <groupId>com.github.danielflower.mavenplugins.testprojects</groupId>
+        <groupId>io.github.michael-isc.mavenplugins.testprojects</groupId>
         <version>${my.version}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -14,7 +14,7 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>com.github.danielflower.mavenplugins.testprojects</groupId>
+                <groupId>io.github.michael-isc.mavenplugins.testprojects</groupId>
                 <artifactId>local-maven-plugin</artifactId>
                 <version>${my.version}</version>
                 <executions>

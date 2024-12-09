@@ -42,7 +42,7 @@ public class SingleModuleTest {
         assertThat(outputLines, oneOf(containsString("Going to release single-module " + expected)));
         assertThat(outputLines, oneOf(containsString("Hello from version " + expected + "!")));
 
-        MvnRunner.assertArtifactInLocalRepo("com.github.danielflower.mavenplugins.testprojects", "single-module", expected);
+        MvnRunner.assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects", "single-module", expected);
 
         assertThat(new File(testProject.localDir, "target/single-module-" + expected + "-package.jar").exists(), is(true));
     }

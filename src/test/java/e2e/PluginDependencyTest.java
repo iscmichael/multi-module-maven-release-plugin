@@ -30,7 +30,7 @@ public class PluginDependencyTest {
                 allOf(
                         // Make sure that plugin uses the-openapi-spec 1.0.1
                         oneOf(containsString("Populating class realm plugin>org.openapitools:openapi-generator-maven-plugin")),
-                        oneOf(containsString("Included: com.github.danielflower.mavenplugins.testprojects.openapi-spec-as-plugin-dependency:the-openapi-spec:jar:1.0.1"))
+                        oneOf(containsString("Included: io.github.michael-isc.mavenplugins.testprojects.openapi-spec-as-plugin-dependency:the-openapi-spec:jar:1.0.1"))
                 )
         );
         testProject.commitRandomFile("the-openapi-spec").pushIt();
@@ -40,7 +40,7 @@ public class PluginDependencyTest {
                 allOf(
                         // Make sure that plugin uses the-openapi-spec 1.0.2
                         oneOf(containsString("Populating class realm plugin>org.openapitools:openapi-generator-maven-plugin")),
-                        oneOf(containsString("Included: com.github.danielflower.mavenplugins.testprojects.openapi-spec-as-plugin-dependency:the-openapi-spec:jar:1.0.2"))
+                        oneOf(containsString("Included: io.github.michael-isc.mavenplugins.testprojects.openapi-spec-as-plugin-dependency:the-openapi-spec:jar:1.0.2"))
                 )
         );
 

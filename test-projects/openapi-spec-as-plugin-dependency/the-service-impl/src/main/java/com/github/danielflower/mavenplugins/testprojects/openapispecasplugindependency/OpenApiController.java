@@ -1,7 +1,7 @@
-package com.github.danielflower.mavenplugins.testprojects.versioninheritor;
+package io.github.michael_isc.mavenplugins.testprojects.versioninheritor;
 
-import com.github.danielflower.mavenplugins.tesetprojects.openapispecasplugindependency.facade.openapi.api.PingApi;
-import com.github.danielflower.mavenplugins.tesetprojects.openapispecasplugindependency.facade.openapi.model.PingResult;
+import io.github.michael_isc.mavenplugins.tesetprojects.openapispecasplugindependency.facade.openapi.api.PingApi;
+import io.github.michael_isc.mavenplugins.tesetprojects.openapispecasplugindependency.facade.openapi.model.PingResult;
 import java.time.OffsetDateTime;
 
 public class OpenApiController {

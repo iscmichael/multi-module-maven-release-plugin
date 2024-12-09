@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.danielflower.mavenplugins.testprojects.parentassibling</groupId>
+    <groupId>io.github.michael-isc.mavenplugins.testprojects.parentassibling</groupId>
     <artifactId>parent-module</artifactId>
     <version>1.2.3-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -21,7 +21,7 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>com.github.danielflower.mavenplugins</groupId>
+                <groupId>io.github.michael-isc.mavenplugins</groupId>
                 <artifactId>multi-module-maven-release-plugin</artifactId>
                 <version>${current.plugin.version}</version>
             </plugin>

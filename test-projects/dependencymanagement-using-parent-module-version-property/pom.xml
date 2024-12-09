@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.danielflower.mavenplugins.testprojects.dependencymanagement-using-parent-module-version-property</groupId>
+    <groupId>io.github.michael-isc.mavenplugins.testprojects.dependencymanagement-using-parent-module-version-property</groupId>
     <artifactId>dependencymanagement-aggregator</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -17,7 +17,7 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>com.github.danielflower.mavenplugins</groupId>
+                <groupId>io.github.michael-isc.mavenplugins</groupId>
                 <artifactId>multi-module-maven-release-plugin</artifactId>
                 <version>${current.plugin.version}</version>
                 <configuration>
@@ -28,7 +28,7 @@
             </plugin>
         </plugins>
     </build>
-    
+
     <modules>
         <module>root-bom</module>
         <module>parent-module</module>

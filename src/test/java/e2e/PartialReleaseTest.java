@@ -63,8 +63,8 @@ public class PartialReleaseTest {
     }
 
     private void installsAllModulesIntoTheRepoWithTheBuildNumber() throws Exception {
-        assertArtifactInLocalRepo("com.github.danielflower.mavenplugins.testprojects.parentassibling", "parent-module", expectedParentVersion);
-        assertArtifactInLocalRepo("com.github.danielflower.mavenplugins.testprojects.parentassibling", "core-utils", expectedCoreVersion);
+        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.parentassibling", "parent-module", expectedParentVersion);
+        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.parentassibling", "core-utils", expectedCoreVersion);
     }
 
     private void theLocalAndRemoteGitReposAreTaggedWithTheModuleNameAndVersion() throws IOException, InterruptedException {

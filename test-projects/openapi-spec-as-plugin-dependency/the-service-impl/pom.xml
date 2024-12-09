@@ -6,7 +6,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.github.danielflower.mavenplugins.testprojects.openapi-spec-as-plugin-dependency</groupId>
+    <groupId>io.github.michael-isc.mavenplugins.testprojects.openapi-spec-as-plugin-dependency</groupId>
     <artifactId>openapi-spec-as-plugin-dependency-aggregator</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
@@ -22,7 +22,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.github.danielflower.mavenplugins.testprojects.openapi-spec-as-plugin-dependency</groupId>
+      <groupId>io.github.michael-isc.mavenplugins.testprojects.openapi-spec-as-plugin-dependency</groupId>
       <artifactId>the-openapi-spec</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
@@ -61,7 +61,7 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>com.github.danielflower.mavenplugins</groupId>
+        <groupId>io.github.michael-isc.mavenplugins</groupId>
         <artifactId>multi-module-maven-release-plugin</artifactId>
         <version>${current.plugin.version}</version>
         <configuration>
@@ -76,7 +76,7 @@
         <version>7.8.0</version>
         <dependencies>
           <dependency>
-            <groupId>com.github.danielflower.mavenplugins.testprojects.openapi-spec-as-plugin-dependency</groupId>
+            <groupId>io.github.michael-isc.mavenplugins.testprojects.openapi-spec-as-plugin-dependency</groupId>
             <artifactId>the-openapi-spec</artifactId>
             <version>1.0-SNAPSHOT</version>
           </dependency>
@@ -90,8 +90,8 @@
               <inputSpec>openapi-spec.yaml</inputSpec>
               <generatorName>java</generatorName>
               <library>native</library>
-              <apiPackage>com.github.danielflower.mavenplugins.tesetprojects.openapispecasplugindependency.facade.openapi.api</apiPackage>
-              <modelPackage>com.github.danielflower.mavenplugins.tesetprojects.openapispecasplugindependency.facade.openapi.model</modelPackage>
+              <apiPackage>io.github.michael-isc.mavenplugins.tesetprojects.openapispecasplugindependency.facade.openapi.api</apiPackage>
+              <modelPackage>io.github.michael-isc.mavenplugins.tesetprojects.openapispecasplugindependency.facade.openapi.model</modelPackage>
               <verbose>false</verbose>
               <configHelp>false</configHelp>
               <configOptions>

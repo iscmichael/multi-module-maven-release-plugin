@@ -102,7 +102,7 @@ public class SkippingUnchangedModulesTest {
         assertTagExists("deep-dependencies-aggregator-1.0.1");
 
         testProject.mvn("dependency:purge-local-repository -DactTransitively=false -DreResolve=false " +
-            "-DmanualInclude=com.github.danielflower.mavenplugins.testprojects.deepdependencies:console-app");
+            "-DmanualInclude=io.github.michael-isc.mavenplugins.testprojects.deepdependencies:console-app");
         List<String> secondBuildOutput = testProject.mvnRelease("2", "-DnoChangesAction=ReleaseNone");
         assertThat(secondBuildOutput, noneOf(containsString("No changes have been detected in any modules so will not perform release")));
         assertTagExists("console-app-3.2.2");
