@@ -1,22 +1,25 @@
-Documentation, download, and usage instructions
-===============================================
+# Documentation, download, and usage instructions
 
-Full usage details, FAQs, background and more are available on the
-**[project documentation website](https://danielflower.github.io/multi-module-maven-release-plugin/index.html)**.
+Fork of the well-known **[com.github.danielflower.mavenplugins:multi-module-maven-release-plugin](https://danielflower.github.io/multi-module-maven-release-plugin/index.html)** plugin.
 
-Development
-===========
+Changes to the official plugin:
 
-[![Build Status](https://travis-ci.org/danielflower/multi-module-maven-release-plugin.svg?branch=master)](https://travis-ci.org/danielflower/multi-module-maven-release-plugin) ![Maven Central](https://img.shields.io/maven-central/v/com.github.danielflower.mavenplugins/multi-module-maven-release-plugin.svg)
+* Minimal Java version 11
+* Supports plugin dependencies
+* Prevents NPE when dependency.getLocation() returns null
 
+## Usage
 
-Contributing
-------------
+```xml
 
-To build and run the tests, you need Java 8 or later and Maven 3 or later. Simply clone and run `mvn install`
-
-Note that the tests run the plugin against a number of sample test projects, located in the `test-projects` folder.
-If adding new functionality, or fixing a bug, it is recommended that a sample project be set up so that the scenario
-can be tested end-to-end.
-
-See also [CONTRIBUTING.md](CONTRIBUTING.md) for information on deploying to Nexus and releasing the plugin.
+<plugins>
+  <plugin>
+    <groupId>io.github.michael-isc.mavenplugins</groupId>
+    <artifactId>multi-module-maven-release-plugin</artifactId>
+    <version>3.7.0</version>
+    <configuration>
+      ...
+    </configuration>
+  </plugin>
+</plugins>
+```
