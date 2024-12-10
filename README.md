@@ -14,7 +14,7 @@ Changes to the official plugin:
 
 <plugins>
   <plugin>
-    <groupId>io.github.michael-isc.mavenplugins</groupId>
+    <groupId>io.github.iscmichael.mavenplugins</groupId>
     <artifactId>multi-module-maven-release-plugin</artifactId>
     <version>3.7.0</version>
     <configuration>

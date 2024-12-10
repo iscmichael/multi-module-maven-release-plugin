@@ -58,9 +58,9 @@ public class IndependentVersionsTest {
     }
 
     private void installsAllModulesIntoTheRepoWithTheBuildNumber() throws Exception {
-        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.independentversions", "independent-versions", expectedParentVersion);
-        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.independentversions", "core-utils", expectedCoreVersion);
-        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.independentversions", "console-app", expectedAppVersion);
+        assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects.independentversions", "independent-versions", expectedParentVersion);
+        assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects.independentversions", "core-utils", expectedCoreVersion);
+        assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects.independentversions", "console-app", expectedAppVersion);
     }
 
     private void theLocalAndRemoteGitReposAreTaggedWithTheModuleNameAndVersion() throws IOException, InterruptedException {

@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static com.github.danielflower.mavenplugins.release.FileUtils.pathOf;
+import static io.github.iscmichael.mavenplugins.release.FileUtils.pathOf;
 import static scaffolding.Photocopier.copyTestProjectToTemporaryLocation;
 
 public class TestProject {

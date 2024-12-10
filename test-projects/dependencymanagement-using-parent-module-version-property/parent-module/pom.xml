@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.michael-isc.mavenplugins.testprojects.dependencymanagement-using-parent-module-version-property</groupId>
+    <groupId>io.github.iscmichael.mavenplugins.testprojects.dependencymanagement-using-parent-module-version-property</groupId>
     <artifactId>parent-module</artifactId>
     <version>${parent-module.version}</version>
     <packaging>pom</packaging>
@@ -22,7 +22,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>io.github.michael-isc.mavenplugins.testprojects.dependencymanagement-using-parent-module-version-property</groupId>
+                <groupId>io.github.iscmichael.mavenplugins.testprojects.dependencymanagement-using-parent-module-version-property</groupId>
                 <artifactId>root-bom</artifactId>
                 <version>1.0-SNAPSHOT</version>
                 <type>pom</type>
@@ -34,7 +34,7 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>io.github.michael-isc.mavenplugins</groupId>
+                <groupId>io.github.iscmichael.mavenplugins</groupId>
                 <artifactId>multi-module-maven-release-plugin</artifactId>
                 <version>${current.plugin.version}</version>
             </plugin>

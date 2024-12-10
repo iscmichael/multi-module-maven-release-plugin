@@ -57,7 +57,7 @@ public class MavenCompatibilityTest {
         String expected = "1.0." + buildNumber;
         testProject.setMvnRunner(MvnRunner.mvn(mavenVersionToTest));
         testProject.mvnRelease(buildNumber);
-        MvnRunner.assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects", "single-module", expected);
+        MvnRunner.assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects", "single-module", expected);
         assertThat(new File(testProject.localDir, "target/single-module-" + expected + "-package.jar").exists(), is(true));
     }
 

@@ -1,6 +1,6 @@
 package e2e;
 
-import com.github.danielflower.mavenplugins.release.AnnotatedTag;
+import io.github.iscmichael.mavenplugins.release.AnnotatedTag;
 import org.apache.commons.io.FileUtils;
 import org.apache.maven.shared.invoker.MavenInvocationException;
 import org.eclipse.jgit.api.Git;
@@ -42,7 +42,7 @@ public class SingleModuleTest {
         assertThat(outputLines, oneOf(containsString("Going to release single-module " + expected)));
         assertThat(outputLines, oneOf(containsString("Hello from version " + expected + "!")));
 
-        MvnRunner.assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects", "single-module", expected);
+        MvnRunner.assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects", "single-module", expected);
 
         assertThat(new File(testProject.localDir, "target/single-module-" + expected + "-package.jar").exists(), is(true));
     }

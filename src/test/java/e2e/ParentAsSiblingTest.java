@@ -57,14 +57,14 @@ public class ParentAsSiblingTest {
     }
 
     private void installsAllModulesIntoTheRepoWithTheBuildNumber() throws Exception {
-        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.parentassibling", "parent-as-sibling", expectedAggregatorVersion);
-        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.parentassibling", "parent-as-sibling", expectedAggregatorVersion);
-        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.parentassibling", "parent-module", expectedParentVersion);
-        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.parentassibling", "parent-module", expectedParentVersion);
-        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.parentassibling", "core-utils", expectedCoreVersion);
-        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.parentassibling", "core-utils", expectedCoreVersion);
-        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.parentassibling", "console-app", expectedAppVersion);
-        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.parentassibling", "console-app", expectedAppVersion);
+        assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects.parentassibling", "parent-as-sibling", expectedAggregatorVersion);
+        assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects.parentassibling", "parent-as-sibling", expectedAggregatorVersion);
+        assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects.parentassibling", "parent-module", expectedParentVersion);
+        assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects.parentassibling", "parent-module", expectedParentVersion);
+        assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects.parentassibling", "core-utils", expectedCoreVersion);
+        assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects.parentassibling", "core-utils", expectedCoreVersion);
+        assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects.parentassibling", "console-app", expectedAppVersion);
+        assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects.parentassibling", "console-app", expectedAppVersion);
     }
 
     private void theLocalAndRemoteGitReposAreTaggedWithTheModuleNameAndVersion() throws IOException, InterruptedException {

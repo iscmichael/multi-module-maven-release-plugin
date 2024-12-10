@@ -30,7 +30,7 @@ public class DifferentDelimiterTest {
         List<String> outputLines = testProject.mvnRelease(buildNumber);
         assertThat(outputLines, oneOf(containsString("Hello from version " + expected + "!")));
 
-        MvnRunner.assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects", "different-delimiter", expected);
+        MvnRunner.assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects", "different-delimiter", expected);
 
         assertThat(new File(testProject.localDir, "target/different-delimiter-" + expected + "-package.jar").exists(), is(true));
     }

@@ -107,14 +107,14 @@ public class NestedModulesTest {
     }
 
     private void installsAllModulesIntoTheRepoWithTheBuildNumber() throws Exception {
-        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.nested", "nested-project", expectedAggregatorVersion + "1");
-        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.nested", "core-utils", expectedCoreVersion + "1");
-        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.nested", "console-app", expectedAppVersion + "1");
-        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.nested", "parent-module", expectedParentVersion + "1");
-        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.nested", "server-modules", expectedServerModulesVersion + "1");
-        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.nested", "server-module-a", expectedServerModuleAVersion + "1");
-        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.nested", "server-module-b", expectedServerModuleBVersion + "1");
-        assertArtifactInLocalRepo("io.github.michael-isc.mavenplugins.testprojects.nested.misnamed", "server-module-c", expectedServerModuleCVersion + "1");
+        assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects.nested", "nested-project", expectedAggregatorVersion + "1");
+        assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects.nested", "core-utils", expectedCoreVersion + "1");
+        assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects.nested", "console-app", expectedAppVersion + "1");
+        assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects.nested", "parent-module", expectedParentVersion + "1");
+        assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects.nested", "server-modules", expectedServerModulesVersion + "1");
+        assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects.nested", "server-module-a", expectedServerModuleAVersion + "1");
+        assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects.nested", "server-module-b", expectedServerModuleBVersion + "1");
+        assertArtifactInLocalRepo("io.github.iscmichael.mavenplugins.testprojects.nested.misnamed", "server-module-c", expectedServerModuleCVersion + "1");
     }
 
     private void assertBothReposTagged(String module, String version, String buildNumber) {

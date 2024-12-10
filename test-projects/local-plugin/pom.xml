@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.michael-isc.mavenplugins.testprojects</groupId>
+    <groupId>io.github.iscmichael.mavenplugins.testprojects</groupId>
     <artifactId>local-plugin</artifactId>
     <packaging>pom</packaging>
     <version>${my.version}</version>
@@ -25,7 +25,7 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>io.github.michael-isc.mavenplugins</groupId>
+                <groupId>io.github.iscmichael.mavenplugins</groupId>
                 <artifactId>multi-module-maven-release-plugin</artifactId>
                 <version>${current.plugin.version}</version>
                 <configuration>
@@ -39,7 +39,7 @@
         <pluginManagement>
             <plugins>
                 <plugin>
-                    <groupId>io.github.michael-isc.mavenplugins.testprojects</groupId>
+                    <groupId>io.github.iscmichael.mavenplugins.testprojects</groupId>
                     <artifactId>local-maven-plugin</artifactId>
                     <version>${my.version}</version>
                 </plugin>
