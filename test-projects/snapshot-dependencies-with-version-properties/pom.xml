@@ -22,7 +22,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.github.iscmichael.mavenplugins.testprojects.independentversions</groupId>
+            <groupId>com.github.danielflower.mavenplugins.testprojects.independentversions</groupId>
             <artifactId>core-utils</artifactId>
             <version>${core-utils.version}</version>
         </dependency>
