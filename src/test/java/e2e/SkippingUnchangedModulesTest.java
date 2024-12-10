@@ -110,7 +110,6 @@ public class SkippingUnchangedModulesTest {
         assertTagDoesNotExist("core-utils-2.0.2");
         assertTagDoesNotExist("more-utils-10.0.2");
         assertTagDoesNotExist("deep-dependencies-aggregator-1.0.2");
-
     }
 
     @Test
